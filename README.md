@@ -8,9 +8,9 @@
 <p align="center"> 
   <a href="https://arxiv.org/abs/TBA."><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-Scone-b31b1b.svg"></a>
   <a href="https://github.com/Ryann-Ran/Scone"><img alt="Build" src="https://img.shields.io/github/stars/Ryann-Ran/Scone"></a> 
-  <a href="https://huggingface.co/Ryann829/Scone"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Scone Model&color=green"></a>
-  <a href="https://huggingface.co/datasets/Ryann829/Scone-S2I-57K"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Training Data (Scone-S2I-57K)&color=yellow"></a>
-  <a href="https://huggingface.co/datasets/Ryann829/SconeEval"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=SconeEval Benchmark&color=yellow"></a>
+  <a href="https://huggingface.co/Ryann829/Scone"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model&color=green"></a>
+  <a href="https://huggingface.co/datasets/Ryann829/Scone-S2I-57K"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data&color=yellow"></a>
+  <a href="https://huggingface.co/datasets/Ryann829/SconeEval"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Benchmark&color=yellow"></a>
 
 
 ><p align="center">
@@ -26,7 +26,7 @@
 # 📢 News
 
 
-- 2025.12.16: The [paper](https://arxiv.org/abs/2509.06818), [model weights](https://huggingface.co/Ryann829/Scone), training code, [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K), and [SconeEval benchmark](https://huggingface.co/datasets/Ryann829/SconeEval) are now released.
+- 2025.12.16: The [paper](https://arxiv.org/abs/2509.06818), [model weights](https://huggingface.co/Ryann829/Scone), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K), and [SconeEval benchmark](https://huggingface.co/datasets/Ryann829/SconeEval) are now released.
 
 # 📖 Introduction
 
@@ -36,12 +36,12 @@ However, existing works primarily focus on expanding subject combinations while 
 Real-world images often involve interference and intricate details, which further limit practical performance.
 Thus, we emphasize examining the input subjects themselves, focusing on the model’s ability to ***distinguish the target subject within complex contexts and leverage this information for generation***.
 
-<figure style="text-align: center;">
+<figure style="text-align: center; border: none; margin: auto;">
     <img src="assets/problem.png" width="512" alt="The distinction problem and challenges."/>
-  <figcaption><b>Figure 1. The distinction problem and challenges.</b></figcaption>
+    <figcaption><b>Figure 1. The distinction problem and challenges.</b></figcaption>
 </figure>
 
-* We propose the **Scone** (**<u>S</u>**ubject-driven **<u>co</u>**mposition and distinctio**<u>n</u>** **<u>e</u>**nhancement) model, which supports multi-subject composition and excels in subject distinction in complex contexts. Experiments show our Scone ranks first among open-source models on OmniContext benchmark.
+* We propose the **Scone** (**S**ubject-driven **co**mposition and distinctio**n** **e**nhancement) model, which supports multi-subject composition and excels in subject distinction in complex contexts. Experiments show our Scone ranks first among open-source models on OmniContext benchmark.
 *  We introduce the **understanding bridge strategy**, which transforms the understanding expert into a semantic bridge, enabling early multimodal alignment and attention-based semantic filtering to guide the generation expert, enhancing subject distinction and semantic fidelity without adding extra parameters.
 * We develop **SconeEval**, a challenging benchmark with three difficulty levels, to evaluate performance on subject-driven image generation tasks from both composition and distinction perspectives.
 
@@ -149,8 +149,8 @@ bash scripts/inference_single_case.sh
 
 <table>
   <tr>
-    <th style="width: 150px; text-align: center;">Reference Image 1</th>
-    <th style="width: 150px; text-align: center;">Reference Image 2</th>
+    <th style="width: 150px; text-align: center;">Ref. 1</th>
+    <th style="width: 150px; text-align: center;">Ref. 2</th>
     <th style="width: 200px; text-align: center;">Instruction</th>
     <th style="width: 150px; text-align: center;">Scone (Ours)</th>
     <th style="width: 150px; text-align: center;">GPT-4o</th>
@@ -219,20 +219,15 @@ Unlike traditional benchmarks that emphasize visual fidelity or text alignment, 
 
 SconeEval includes three progressively challenging tasks, as shown in Figure 2(c): composition, distinction, and distinction & composition. In the composition task, each reference image contains a subject, and one or more images correspond to single or multiple generated subjects. In the distinction task, each reference image contains multiple subjects, and the model generates one target subject. The distinction & composition task integrates both settings, where each reference image contains multiple subjects and multiple images are used for multi-subject generation. Tasks involving distinction include cross-category and intra-category cases, indicating whether candidate subjects in a reference image belong to the same category. 
 
-<figure style="text-align: center;">
-    <img src="assets/sconeeval.png" width="1024" alt="Overview of our SconeEval benchmark."/>
-  <figcaption><b>Figure 2. Overview of our SconeEval benchmark.</b></figcaption>
+
+<figure style="text-align: center; border: none; margin: auto;">
+	<img src="assets/sconeeval.png" width="1024" alt="Overview of our SconeEval benchmark."/>
+    <figcaption><b>Figure 2. Overview of our SconeEval benchmark.</b></figcaption>
 </figure>
 
 ### 📊 LeaderBoard
 
 <table border="1" style="border-collapse: collapse; width: 100%;">
-  <style>
-    table th:not(:first-child),
-    table td:not(:first-child) {
-      text-align: center !important;
-    }
-  </style>
     <thead>
         <tr>
             <th rowspan="3">Method</th>
