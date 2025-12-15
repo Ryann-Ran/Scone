@@ -156,7 +156,6 @@ bash scripts/inference_single_case.sh
     <th style="width: 150px; text-align: center;">GPT-4o</th>
     <th style="width: 150px; text-align: center;">Gemini-2.5-Flash-Image</th>
     <th style="width: 150px; text-align: center;">UNO</th>
-    <th style="width: 150px; text-align: center;">USO</th>
     <th style="width: 150px; text-align: center;">Qwen-Image-Edit-2509</th>
     <th style="width: 150px; text-align: center;">BAGEL</th>
     <th style="width: 150px; text-align: center;">OmniGen2</th>
@@ -165,12 +164,11 @@ bash scripts/inference_single_case.sh
   <tr>
     <td style="width: 150px; text-align: center;"><img src="./example_images/image_object.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_images/image_character.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
-    <td style="width: 200px; text-align: center;">The man in image 2 is holding the object with a blue-and-red top image 1.</td>
+    <td style="width: 200px; text-align: center;">The man from image 2 holds the object which has a blue-and-red top in image 1 in a coffee shop.</td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/Scone.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/GPT-4o.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/Gemini-2.5-Flash-Image.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/UNO.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
-    <td style="width: 150px; text-align: center;"><img src="./example_results/USO.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/Qwen-Image-Edit-2509.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/BAGEL.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
     <td style="width: 150px; text-align: center;"><img src="./example_results/OmniGen2.png" style="width: 150px; height: auto; display: block; margin: 0 auto;" /></td>
