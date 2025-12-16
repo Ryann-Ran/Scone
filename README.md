@@ -11,7 +11,7 @@
   <a href="https://huggingface.co/Ryann829/Scone"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model&color=green"></a>
   <a href="https://huggingface.co/datasets/Ryann829/Scone-S2I-57K"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data&color=yellow"></a>
   <a href="https://huggingface.co/datasets/Ryann829/SconeEval"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Benchmark&color=yellow"></a>
-
+</p>
 
 ><p align="center">
 >  <span style="color:#137cf3; font-family: Gill Sans;">
@@ -26,7 +26,7 @@
 # 📢 News
 
 
-- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K) are now released.
+- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K), [SconeEval benchmark](https://huggingface.co/datasets/Ryann829/SconeEval) are now released.
 
 # 📖 Introduction
 
@@ -480,11 +480,11 @@ bash eval/s2i/sconeeval/eval.sh
 - [x] Release inference and evaluation code
 - [x] Release model weight
 - [x] Release training data
-- [ ] Release SconeEval benchmark
+- [x] Release SconeEval benchmark
 
 
 
-#  🚰 Citation
+# 🚰 Citation
 If you find Scone helpful, please consider giving the repo a star ⭐.
 
 If you find this project useful for your research, please consider citing our paper:
