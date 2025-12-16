@@ -26,7 +26,7 @@
 # 📢 News
 
 
-- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone) are now released.
+- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K) are now released.
 
 # 📖 Introduction
 
@@ -479,7 +479,7 @@ bash eval/s2i/sconeeval/eval.sh
 - [x] Release training code
 - [x] Release inference and evaluation code
 - [x] Release model weight
-- [ ] Release training data
+- [x] Release training data
 - [ ] Release SconeEval benchmark
 
 
