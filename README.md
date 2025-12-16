@@ -26,7 +26,7 @@
 # 📢 News
 
 
-- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation) are now released.
+- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone) are now released.
 
 # 📖 Introduction
 
@@ -96,7 +96,7 @@ cd Scone
 hf download ByteDance-Seed/BAGEL-7B-MoT  --local-dir ./ckpts/BAGEL-7B-MoT
 ```
 
-> - **Note**: To avoid out-of-memory (OOM) issues, we disable the EMA update strategy originally used in **BAGEL. All our training processes are conducted on 8 Nvidia A800 GPUs.
+> - **Note**: To avoid out-of-memory (OOM) issues, we disable the EMA update strategy originally used in BAGEL. All our training processes are conducted on 8 Nvidia A800 GPUs.
 > - The usage of semantic mask in the understanding bridge strategy is controlled by the training argument `--use_semantic_mask`.
 
 ## Stage I: Composition training
@@ -448,7 +448,7 @@ SconeEval includes three progressively challenging tasks, as shown in Figure 2(c
 </table>
 
 > - *: GPT-4o responded to 365~370 test cases out of the total 409 cases due to OpenAI safety restrictions.
-> - To mitigate randomness, we perform 3 rounds of sampling, scoring 3 times per round, yielding 9 group results. The final score is the average of these results.
+> - To mitigate randomness, we perform 3 rounds of sampling at 1024x1024 resolution, scoring 3 times per round, yielding 9 group results. The final score is the average of these results.
 
 ### Inference
 
@@ -478,7 +478,7 @@ bash eval/s2i/sconeeval/eval.sh
 - [x] Release paper
 - [x] Release training code
 - [x] Release inference and evaluation code
-- [ ] Release model weight
+- [x] Release model weight
 - [ ] Release training data
 - [ ] Release SconeEval benchmark
 
