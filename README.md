@@ -6,7 +6,7 @@
 </h3>
 
 <p align="center"> 
-  <a href="https://arxiv.org/abs/TBA."><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-Scone-b31b1b.svg"></a>
+  <a href="https://arxiv.org/abs/2512.12675"><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-Scone-b31b1b.svg"></a>
   <a href="https://github.com/Ryann-Ran/Scone"><img alt="Build" src="https://img.shields.io/github/stars/Ryann-Ran/Scone"></a> 
   <a href="https://huggingface.co/Ryann829/Scone"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model&color=green"></a>
   <a href="https://huggingface.co/datasets/Ryann829/Scone-S2I-57K"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data&color=yellow"></a>
@@ -26,7 +26,7 @@
 # 📢 News
 
 
-- 2025.12.16: The [paper](https://arxiv.org/abs/2509.06818), [model weights](https://huggingface.co/Ryann829/Scone), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K), and [SconeEval benchmark](https://huggingface.co/datasets/Ryann829/SconeEval) are now released.
+- 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation) are now released.
 
 # 📖 Introduction
 
@@ -476,18 +476,28 @@ bash eval/s2i/sconeeval/eval.sh
 # 🚀 Updates
 
 - [x] Release paper
-- [x] Release model weight
-- [x] Release training data
-- [x] Release SconeEval benchmark
 - [x] Release training code
 - [x] Release inference and evaluation code
+- [ ] Release model weight
+- [ ] Release training data
+- [ ] Release SconeEval benchmark
+
+
 
 #  🚰 Citation
 If you find Scone helpful, please consider giving the repo a star ⭐.
 
 If you find this project useful for your research, please consider citing our paper:
 ```bibtex
-TBA.
+@misc{wang2025sconebridgingcompositiondistinction,
+      title={Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling}, 
+      author={Yuran Wang and Bohan Zeng and Chengzhuo Tong and Wenxuan Liu and Yang Shi and Xiaochen Ma and Hao Liang and Yuanxing Zhang and Wentao Zhang},
+      year={2025},
+      eprint={2512.12675},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2512.12675}, 
+}
 ```
 
 # 💪 Acknowledgements
