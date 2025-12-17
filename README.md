@@ -6,11 +6,12 @@
 </h3>
 
 <p align="center"> 
-  <a href="https://arxiv.org/abs/2512.12675"><img alt="Build" src="https://img.shields.io/badge/arXiv%20paper-Scone-b31b1b.svg"></a>
-  <a href="https://github.com/Ryann-Ran/Scone"><img alt="Build" src="https://img.shields.io/github/stars/Ryann-Ran/Scone"></a> 
+  <a href="https://arxiv.org/abs/2512.12675"><img alt="Build" src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg"></a>
+  <a href="https://huggingface.co/papers/2512.12675"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Paper&color=blue"></a>
   <a href="https://huggingface.co/Ryann829/Scone"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Model&color=green"></a>
   <a href="https://huggingface.co/datasets/Ryann829/Scone-S2I-57K"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Data&color=yellow"></a>
   <a href="https://huggingface.co/datasets/Ryann829/SconeEval"><img src="https://img.shields.io/static/v1?label=%F0%9F%A4%97%20Hugging%20Face&message=Benchmark&color=yellow"></a>
+  <a href="https://github.com/Ryann-Ran/Scone"><img alt="Build" src="https://img.shields.io/github/stars/Ryann-Ran/Scone"></a> 
 </p>
 
 ><p align="center">
