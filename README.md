@@ -73,12 +73,12 @@ pip install flash_attn==2.5.8 --no-build-isolation
 
 ```
 Scone-S2I-57K
-		├── parquet_data
+	├── parquet_data
     │   ├── scone_single_candidate_base/
     │   ├── scone_single_candidate_refined/
     │   └── scone_multi_candidate/
     └── parquet_info
-    		├── scone_single_candidate_base.json
+    	├── scone_single_candidate_base.json
         ├── scone_single_candidate_refined.json
         └── scone_multi_candidate.json
 ```
