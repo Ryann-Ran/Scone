@@ -61,7 +61,7 @@ pip install flash_attn==2.5.8 --no-build-isolation
 
 ## Data and base model preparation
 
-1. Download our **22K refined single-candidate data** and **35K multi-candidate data** from [Scone-S2I-57K](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K). The 70K base single-canididate data are sampled from open-source datasets like [X2I](https://huggingface.co/datasets/yzwang/X2I-subject-driven), [MUSAR-Gen](https://huggingface.co/datasets/guozinan/MUSAR-Gen), [UNO-1M](https://huggingface.co/datasets/bytedance-research/UNO-1M), and [Echo-4o-Image](https://huggingface.co/datasets/Yejy53/Echo-4o-Image). Please refer to the dataset links for more details.
+1. Download our **22K refined single-candidate data** and **35K multi-candidate data** from [Scone-S2I-57K](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K). The 70K base single-candidate data are sampled from open-source datasets like [X2I](https://huggingface.co/datasets/yzwang/X2I-subject-driven), [MUSAR-Gen](https://huggingface.co/datasets/guozinan/MUSAR-Gen), [UNO-1M](https://huggingface.co/datasets/bytedance-research/UNO-1M), and [Echo-4o-Image](https://huggingface.co/datasets/Yejy53/Echo-4o-Image). Please refer to the dataset links for more details.
 
    ```bash
    cd Scone
@@ -490,14 +490,11 @@ If you find Scone helpful, please consider giving the repo a star ⭐.
 
 If you find this project useful for your research, please consider citing our paper:
 ```bibtex
-@misc{wang2025sconebridgingcompositiondistinction,
-      title={Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling}, 
-      author={Yuran Wang and Bohan Zeng and Chengzhuo Tong and Wenxuan Liu and Yang Shi and Xiaochen Ma and Hao Liang and Yuanxing Zhang and Wentao Zhang},
-      year={2025},
-      eprint={2512.12675},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2512.12675}, 
+@article{wang2025scone,
+  title={Scone: Bridging Composition and Distinction in Subject-Driven Image Generation via Unified Understanding-Generation Modeling},
+  author={Wang, Yuran and Zeng, Bohan and Tong, Chengzhuo and Liu, Wenxuan and Shi, Yang and Ma, Xiaochen and Liang, Hao and Zhang, Yuanxing and Zhang, Wentao},
+  journal={arXiv preprint arXiv:2512.12675},
+  year={2025}
 }
 ```
 
