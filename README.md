@@ -2,7 +2,7 @@
   <img src="assets/logo.png" alt="Scone" width="400"/>
 </p>
 <h3 align="center">
-    Scone: Bridging Composition and Distinction in Subject-Driven Image Generation </br>via Unified Understanding-Generation Modeling
+    [✨CVPR 2026 Highlight] Scone: Bridging Composition and Distinction in Subject-Driven</br> Image Generation via Unified Understanding-Generation Modeling
 </h3>
 
 <p align="center"> 
@@ -26,7 +26,7 @@
 
 # 📢 News
 
-
+- 2026.4.9: 🎉🎉 Our paper has been selected as a ✨**Highlight** at **CVPR 2026**.
 - 2025.12.16: The [paper](https://arxiv.org/abs/2512.12675), [training code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-train), [inference and evaluation code](https://github.com/Ryann-Ran/Scone?tab=readme-ov-file#-inference-and-evaluation), [model weight](https://huggingface.co/Ryann829/Scone), [training data](https://huggingface.co/datasets/Ryann829/Scone-S2I-57K), [SconeEval benchmark](https://huggingface.co/datasets/Ryann829/SconeEval) are now released.
 
 # 📖 Introduction
