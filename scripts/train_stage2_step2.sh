@@ -39,10 +39,10 @@ torchrun \
     --freeze_und False \
     --freeze_vit True \
     --freeze_llm False \
-    --freeze_llm_und True \
-    --freeze_llm_gen True \
-    --freeze_mlp_und True \
-    --freeze_mlp_gen True \
+    --freeze_llm_und False \
+    --freeze_llm_gen False \
+    --freeze_mlp_und False \
+    --freeze_mlp_gen False \
     --text_cond_dropout_prob 0.1 \
     --vae_cond_dropout_prob 0.0 \
     --vit_cond_dropout_prob 0.0
